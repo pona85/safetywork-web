@@ -14,11 +14,12 @@ export default function Navbar(){
             <span className="ml-2 hidden sm:inline text-xs text-neutral-500">Seguridad e Higiene</span>
           </div>
         </Link>
-        <Link href="/quienes-somos" className="hover:underline">Quiénes somos</Link>
-        <Link href="/casos" className="hover:underline">Casos de éxito</Link>
+       
         <div className="hidden sm:flex items-center gap-6">
           <a href="/#servicios" className="hover:underline">Servicios</a>
           <a href="/#porque" className="hover:underline">Por qué elegirnos</a>
+           <a href="/quienes-somos" className="hover:underline">Quiénes somos</a>
+        <a href="/casos" className="hover:underline">Casos de éxito</a>
           <a href="/#contacto" className="btn-primary">Contacto</a>
         </div>
       </nav>
