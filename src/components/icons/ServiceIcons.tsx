@@ -13,4 +13,18 @@ export const TrainingIcon = (props:any)=>(
     <rect x="3" y="4" width="13" height="9" rx="2"/><path d="M8 18v-2a3 3 0 0 1 3-3h7" />
   </svg>
 );
-/* Agregamos más según necesitemos… */
+
+// Memoria técnica contra incendio
+export const FireIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+    <path d="M12 3c2 3-2 4-2 7a4 4 0 1 0 8 0c0-2-1-3-2-5 0 3-2 3-4 3"/>
+  </svg>
+);
+
+// Investigación de accidentes
+export const IncidentIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+    <path d="M12 9v4m0 4h.01"/>
+    <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/>
+  </svg>
+);
