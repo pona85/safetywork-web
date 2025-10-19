@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .t1 { font: 700 72px 'Montserrat', Arial, sans-serif; fill:#0A1B2B }
+      .t2 { font: 400 32px 'Inter', Arial, sans-serif; fill:#506273 }
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect width="624" height="630" fill="#6EA4D7"/>
+  <rect x="70" y="70" width="484" height="28" fill="#ffffff"/>
+  <rect x="70" y="70" width="28" height="490" fill="#ffffff"/>
+  <rect x="526" y="70" width="28" height="490" fill="#ffffff"/>
+  <text x="684" y="230" class="t1">Safety &amp; Work</text>
+  <text x="684" y="280" class="t2">Consultores de Seguridad e Higiene</text>
+</svg>

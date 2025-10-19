@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200">
+  <defs>
+    <style>
+      .h1 { font: 700 96px 'Montserrat', Arial, sans-serif; fill:#ffffff }
+      .h2 { font: 400 42px 'Inter', Arial, sans-serif; fill:#ffffff; opacity:.9 }
+    </style>
+  </defs>
+  <rect width="2400" height="1200" fill="#6EA4D7"/>
+  <rect x="140" y="140" width="2120" height="36" fill="#ffffff"/>
+  <rect x="140" y="140" width="36" height="920" fill="#ffffff"/>
+  <rect x="2224" y="140" width="36" height="920" fill="#ffffff"/>
+  <rect x="1320" y="0" width="1080" height="1200" fill="#ffffff" opacity=".15"/>
+  <rect x="0" y="720" width="2400" height="480" fill="#ffffff" opacity=".12"/>
+  <text x="160" y="340" class="h1">Consultores de Seguridad e Higiene</text>
+  <text x="160" y="420" class="h2">Prevención, cumplimiento y excelencia operacional.</text>
+</svg>

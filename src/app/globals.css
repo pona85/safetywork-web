@@ -1,22 +1,9 @@
-@import "tailwindcss";
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --brand:#7CB3D2;
-  --brand-dark:#333333;
-  --bg:#ffffff;
-}
-
-html, body { @apply bg-white text-neutral-800; }
-
-.btn-primary{
-  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium shadow-sm transition;
-  background: var(--brand);
-  color: white;
-}
-.btn-primary:hover{ filter: brightness(0.95); }
-
-.card{
-  @apply rounded-2xl border border-neutral-200/70 bg-white shadow-sm;
-}
+:root { color-scheme: light; }
+html, body { height: 100%; }
+/* Fix visual rápido */
+a { text-decoration: none; }
+* { border-color: rgba(0,0,0,0.08); }

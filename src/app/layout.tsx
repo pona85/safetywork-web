@@ -1,24 +1,22 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { BRAND } from "@/lib/brand";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import "./globals.css"
+import { brandHead, brandBody } from "./fonts"
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
 
-export const metadata: Metadata = {
-  title: `${BRAND.name} · Seguridad e Higiene`,
-  description: BRAND.claim,
-};
+export const metadata = {
+  title: "Safety & Work – Consultores de Seguridad e Higiene",
+  description: "Prevención de accidentes y excelencia operacional para la industria.",
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body>
-        <div className="min-h-dvh flex flex-col">
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+      <body >
+        <Header />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
-  );
+  )
 }
+ 
