@@ -1,9 +1,9 @@
-import { Wrench, ShieldCheck, FileCog, Activity, Flame, ListChecks, Search, Gauge, Car, Map } from "lucide-react"
+import { Wrench, ShieldCheck, FileCog, Activity, Flame, ListChecks, Search, Gauge, Car, Map, LucideIcon } from "lucide-react"
 
 export type Service = {
   title: string
   desc: string
-  icon: React.ComponentType<any>
+  icon: LucideIcon  // ✅ Cambio aquí - tipo correcto de lucide-react
 }
 
 export const services: Service[] = [

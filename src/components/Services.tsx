@@ -1,5 +1,5 @@
 // app/services/page.tsx (fragmento)
-import { IconFrame, IconServicios, IconBadge } from "@/components/icons/ServiceIcons";
+import IconFrame, { IconServicios, IconBadge } from "@/components/icons/ServiceIcons";
 
 const services = [
   { title: "Auditorías de equipos de torre", desc: "Inspección técnica de Drilling, Workover y Pulling." },

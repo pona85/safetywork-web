@@ -1,11 +1,11 @@
 import * as React from "react";
 import {
-  type Icon as LucideIcon,
   Handshake, Scale, Check,
   RadioTower, Wrench, Flame,
   ClipboardList, HardHat, Gauge,
   Car, FileSearch, Map as MapIcon,
-  Presentation, Factory
+  Presentation, Factory,
+  type LucideIcon  // ✅ Importar el tipo correctamente
 } from "lucide-react";
 
 export function IconBadge({ children, size = 44 }: { children: React.ReactNode; size?: number }) {
