@@ -1,10 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f0f6fd;
+  --color-brand-100: #e1eefb;
+  --color-brand-200: #c3dbf5;
+  --color-brand-300: #9ec2ec;
+  --color-brand-400: #79a8e1;
+  --color-brand-500: #6EA4D7;
+  --color-brand-600: #4f82b3;
+  --color-brand-700: #3f6a92;
+  --color-brand-800: #335674;
+  --color-brand-900: #29465d;
+  
+  --color-ink-900: #0A1B2B;
+  --color-ink-700: #273B4A;
+  --color-ink-500: #506273;
+}
 
 :root {
   color-scheme: light;
-  --brand: #6EA4D7;
 }
 
 html {
@@ -13,14 +27,6 @@ html {
 
 html, body {
   height: 100%;
-}
-
-* {
-  border-color: rgba(0,0,0,0.08);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  margin: 0;
+  padding: 0;
 }

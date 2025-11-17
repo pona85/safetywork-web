@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { motion } from "framer-motion"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
