@@ -59,7 +59,6 @@ export default function SobreNosotros() {
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                {/* Placeholder para imagen del equipo */}
                 <div className="aspect-[4/3] bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center">
                   <div className="flex flex-col items-center justify-center h-full text-white p-8 text-center">
                     <svg className="w-24 h-24 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +69,6 @@ export default function SobreNosotros() {
                   </div>
                 </div>
                 
-                {/* Decoración */}
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-400 rounded-full blur-3xl opacity-30"></div>
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-brand-600 rounded-full blur-3xl opacity-20"></div>
               </div>
@@ -87,7 +85,6 @@ export default function SobreNosotros() {
           className="mb-24"
         >
           <div className="relative rounded-3xl bg-gradient-to-br from-brand-600 to-brand-700 overflow-hidden">
-            {/* Patrón de fondo */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute inset-0" style={{
                 backgroundImage: `radial-gradient(circle at 25px 25px, white 2%, transparent 0%)`,
@@ -117,7 +114,7 @@ export default function SobreNosotros() {
 
                 <div className="inline-block px-8 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/30">
                   <p className="text-white/90 font-medium italic">
-                    "La prevención de accidentes es fundamental para cuidar nuestra vida y la de los demás. La seguridad es una inversión valiosa."
+                    &ldquo;La prevención de accidentes es fundamental para cuidar nuestra vida y la de los demás. La seguridad es una inversión valiosa.&rdquo;
                   </p>
                 </div>
               </div>
@@ -152,7 +149,6 @@ export default function SobreNosotros() {
                 whileHover={{ y: -8, scale: 1.02 }}
                 className="group relative bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 overflow-hidden"
               >
-                {/* Gradient hover effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 
                 <div className="relative text-center">
