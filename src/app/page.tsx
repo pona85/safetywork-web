@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
+import SobreNosotros from "@/components/SobreNosotros"
 import { Shield, CheckCircle, Award, Users, Zap, TrendingUp, ArrowRight, Phone, Mail } from "lucide-react"
 
 export default function HomePage() {
@@ -168,6 +169,10 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* AGREGAR AQUÍ */}
+      <SobreNosotros />
+
       {/* VALUE PROPS */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="mx-auto max-w-7xl px-4">
@@ -291,6 +296,57 @@ export default function HomePage() {
                 className="px-8 py-4 bg-gradient-to-r from-brand-500 to-brand-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all cursor-default"
               >
                 {pillar}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+    {/* GALERÍA DE PROYECTOS */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-ink-900 mb-4">
+              Nuestro Trabajo en Campo
+            </h2>
+            <p className="text-xl text-ink-500 max-w-2xl mx-auto">
+              Presencia en los principales yacimientos de la región
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { img: "/yacimiento-1.jpg", title: "Auditoría de Equipos" },
+              { img: "/capacitacion.jpg", title: "Capacitación H2S" },
+              { img: "/equipo-torre.jpg", title: "Control BOP" },
+              { img: "/yacimiento-2.jpg", title: "Inspección de Seguridad" },
+              { img: "/epp-team.jpg", title: "Equipo en Campo" },
+              { img: "/certificacion.jpg", title: "Certificaciones" },
+            ].map((item, idx) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                whileHover={{ y: -8 }}
+                className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white font-bold text-xl">{item.title}</h3>
+                </div>
               </motion.div>
             ))}
           </div>
