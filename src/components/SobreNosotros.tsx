@@ -61,23 +61,13 @@ export default function SobreNosotros() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 {/* Placeholder para imagen del equipo */}
                 <div className="aspect-[4/3] bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center">
-                  <img
-                    src="/equipo-safetywork.jpg"
-                    alt="Equipo Safety & Work"
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none'
-                      e.currentTarget.parentElement!.innerHTML = `
-                        <div class="flex flex-col items-center justify-center h-full text-white p-8 text-center">
-                          <svg class="w-24 h-24 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                          </svg>
-                          <p class="text-2xl font-bold mb-2">Nuestro Equipo</p>
-                          <p class="text-sm opacity-90">20+ años de experiencia en yacimientos</p>
-                        </div>
-                      `
-                    }}
-                  />
+                  <div className="flex flex-col items-center justify-center h-full text-white p-8 text-center">
+                    <svg className="w-24 h-24 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <p className="text-2xl font-bold mb-2">Nuestro Equipo</p>
+                    <p className="text-sm opacity-90">20+ años de experiencia en yacimientos</p>
+                  </div>
                 </div>
                 
                 {/* Decoración */}
